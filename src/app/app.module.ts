@@ -17,13 +17,17 @@ import { AngularFireAuthModule } from '@angular/fire/compat/auth';
 import { AngularFireStorageModule } from '@angular/fire/compat/storage';
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
+import { HeaderComponent } from './dashboard/header/header.component';
+import { SideNavComponent } from './dashboard/side-nav/side-nav.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     DashboardComponent,
-    GsStudentComponent
+    GsStudentComponent,
+    HeaderComponent,
+    SideNavComponent
   ],
   imports: [
     BrowserModule,
