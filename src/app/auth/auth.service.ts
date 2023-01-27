@@ -12,7 +12,7 @@ export class AuthService {
   login(email : string, password : string){
     this.fireauth.signInWithEmailAndPassword(email,password).then( () =>{
         localStorage.setItem('token','true');
-        this.router.navigate(['/gs-patients']);
+        this.router.navigate(['/dashboard']);
     }, err => {
         alert('Erreur de connexion');
         this.router.navigate(['/login']);
