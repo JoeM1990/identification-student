@@ -39,4 +39,9 @@ export class AuthService {
       alert(err.message);
     })
   }
+
+  checkLogin(){
+    return !! localStorage.getItem('token');
+  }
+  
 }
